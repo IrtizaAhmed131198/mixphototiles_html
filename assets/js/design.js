@@ -132,7 +132,7 @@ document.getElementById('remove-image').addEventListener('click', function () {
 
 
 // Add a click listener to the slider wrapper
-document.querySelector('.Images-frame-slider .swiper-wrapper').addEventListener('click', function(e) {
+document.querySelector('.Images-frame-slider .swiper-wrapper').addEventListener('click', function (e) {
     // Find the closest slide element (assumes your slide elements have the class 'swiper-slide')
     const slide = e.target.closest('.swiper-slide');
     if (!slide) return;
@@ -187,16 +187,16 @@ designOptions.forEach(option => {
 function updateFrameBorderImage(imageUrl) {
     const frameWrap = document.getElementById('frameWrap');
     if (frameWrap) {
-      // Set border-image property. Adjust slicing values as necessary.
-      frameWrap.style.borderImageSource = `url(${imageUrl})`;
-      frameWrap.style.borderImageSlice = '30'; // adjust this value as needed
-      frameWrap.style.borderImageRepeat = 'stretch'; // or 'repeat' depending on your design
+        // Set border-image property. Adjust slicing values as necessary.
+        frameWrap.style.borderImageSource = `url(${imageUrl})`;
+        frameWrap.style.borderImageSlice = '30'; // adjust this value as needed
+        frameWrap.style.borderImageRepeat = 'stretch'; // or 'repeat' depending on your design
     }
 }
-  
-  // Attach click event listener to all property list items
+
+// Attach click event listener to all property list items
 document.querySelectorAll('.frame-color').forEach(item => {
-    item.addEventListener('click', function() {
+    item.addEventListener('click', function () {
         const img_src = this.getAttribute('data-src');
         const color_name = this.getAttribute('data-color');
         // Get the image inside this item
@@ -215,7 +215,7 @@ const sizeOptions = document.querySelectorAll('.frame-size');
 // Add click event listener to each size option
 sizeOptions.forEach(option => {
     option.addEventListener('click', function () {
-        
+
         // Retrieve the width and height values from data attributes
         const width = this.getAttribute('data-width');
         const height = this.getAttribute('data-height');
@@ -238,7 +238,7 @@ sizeOptions.forEach(option => {
         this.classList.add('selected-size');
 
         const priceShow = document.getElementById('price-show');
-        priceShow.textContent = '₹'+frame_price;
+        priceShow.textContent = '₹' + frame_price;
 
         const sizeShow = document.getElementById('size-show');
         sizeShow.textContent = frameSizeText;
@@ -252,7 +252,7 @@ const finishOptions = document.querySelectorAll('.frame-finish');
 // Add click event listener to each size option
 finishOptions.forEach(option => {
     option.addEventListener('click', function () {
-        
+
         const finish_price = this.getAttribute('data-price');
         const frameFinishText = this.querySelector('.propertyName').textContent.trim();
 
@@ -261,7 +261,7 @@ finishOptions.forEach(option => {
         // this.classList.add('selected-size');
 
         const priceShow = document.getElementById('price-show');
-        priceShow.textContent = '₹'+finish_price;
+        priceShow.textContent = '₹' + finish_price;
 
         const finishShow = document.getElementById('finish-show');
         finishShow.textContent = frameFinishText;
@@ -275,7 +275,7 @@ const hangOptions = document.querySelectorAll('.frame-hang');
 // Add click event listener to each size option
 hangOptions.forEach(option => {
     option.addEventListener('click', function () {
-        
+
         const framehangText = this.querySelector('.propertyName').textContent.trim();
 
         // Optional: Highlight selected size option
@@ -286,3 +286,58 @@ hangOptions.forEach(option => {
         hangShow.textContent = framehangText;
     });
 });
+
+
+
+// crop js 
+// Start upload preview image
+$(document).ready(function () {
+    $(".gambar").attr("src", "https://user.gadjian.com/static/images/personnel_boy.png");
+    let $uploadCrop, rawImg;
+
+    function readFile(input) {
+        if (input.files && input.files[0]) {
+            let reader = new FileReader();
+            reader.onload = function (e) {
+                rawImg = e.target.result;
+                $('#cropImagePop').modal('show');
+            }
+            reader.readAsDataURL(input.files[0]);
+        } else {
+            alert("Sorry - your browser doesn't support the FileReader API");
+        }
+    }
+
+    $uploadCrop = $('#upload-demo').croppie({
+        viewport: {
+            width: 400,
+            height: 100,
+        },
+        enforceBoundary: false,
+        enableExif: true
+    });
+
+    $('#cropImagePop').on('shown.bs.modal', function () {
+        $uploadCrop.croppie('bind', {
+            url: rawImg
+        }).then(function () {
+            console.log('jQuery bind complete');
+        });
+    });
+
+    $('.item-img').on('change', function () {
+        readFile(this);
+    });
+
+    $('#cropImageBtn').on('click', function () {
+        $uploadCrop.croppie('result', {
+            type: 'base64',
+            format: 'jpeg',
+            size: { width: 1680, height: 435 }
+        }).then(function (resp) {
+            $('#item-img-output').attr('src', resp);
+            $('#cropImagePop').modal('hide');
+        });
+    });
+});
+// crop js 
