@@ -1,4 +1,3 @@
-
 // Load images from Local Storage on page load
 function loadImagesFromLocalStorage() {
     const storedImages = localStorage.getItem('uploadedImages');
@@ -51,10 +50,6 @@ function renderSliderImages(imagesArray) {
 }
 
 // Call the function on page load
-document.addEventListener('DOMContentLoaded', loadImagesFromLocalStorage);
-
-// Event listener for image upload
-// Get all elements with the class 'upload-photo'
 const uploadPhotoElements = document.querySelectorAll('.upload-photo');
 
 // Loop through each element and attach the event listener
@@ -63,14 +58,15 @@ uploadPhotoElements.forEach(element => {
         const files = event.target.files;
         if (!files.length) return;
 
-        // To store new valid images
-        let validImages = [];
+        let validImages = []; // Store valid images after checking blur
 
-        // Read each file one by one using a loop and FileReader
         Array.from(files).forEach(file => {
-            // Check if the file is an image
             if (!file.type.startsWith('image/')) {
-                alert('Only image files are allowed.');
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Invalid File',
+                    text: 'Only image files are allowed!',
+                });
                 return;
             }
 
@@ -80,31 +76,50 @@ uploadPhotoElements.forEach(element => {
                 img.src = e.target.result;
 
                 img.onload = function () {
-                    // Validate image resolution (minimum size)
                     if (img.width < 125 || img.height < 112) {
-                        alert('One of the images must be at least 125px in width and 112px in height.');
+                        Swal.fire({
+                            icon: 'warning',
+                            title: 'Image Too Small',
+                            text: 'One of the images must be at least 125px in width and 112px in height.',
+                        });
                         return;
                     }
 
-                    // Add the valid image data URL to validImages array
-                    validImages.push(e.target.result);
+                    // Create an offscreen canvas for processing the image
+                    const canvas = document.createElement("canvas");
+                    const ctx = canvas.getContext("2d");
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    ctx.drawImage(img, 0, 0, img.width, img.height);
 
-                    // Once all files have been processed, update local storage and render images
+                    // Perform blur detection
+                    if (!isImageBlurred(canvas)) {
+                        validImages.push(e.target.result);
+                    } else {
+                        Swal.fire({
+                            icon: 'warning',
+                            title: 'Blurry Image',
+                            text: 'One of the images is too blurry. Please upload a clearer image.',
+                        });
+                    }
+
                     if (validImages.length === files.length) {
-                        // Retrieve already saved images if any
                         const existing = localStorage.getItem('uploadedImages');
                         const existingImages = existing ? JSON.parse(existing) : [];
                         const newImagesArray = existingImages.concat(validImages);
 
-                        // Save to local storage
                         localStorage.setItem('uploadedImages', JSON.stringify(newImagesArray));
 
-                        // Hide file upload section and show editing section
                         document.querySelector('.file-uploadSection').style.display = 'none';
                         document.querySelector('.FrameDesignSection').style.display = 'block';
 
-                        // Render images in slider
                         renderSliderImages(newImagesArray);
+
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Upload Successful',
+                            text: 'Your images have been uploaded successfully!',
+                        });
                     }
                 };
             };
@@ -112,6 +127,39 @@ uploadPhotoElements.forEach(element => {
         });
     });
 });
+
+// Function to check if an image is blurry using the Variance of Laplacian method
+function isImageBlurred(canvas) {
+    const ctx = canvas.getContext("2d");
+    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    const pixels = imageData.data;
+
+    let grayData = [];
+    for (let i = 0; i < pixels.length; i += 4) {
+        let gray = pixels[i] * 0.299 + pixels[i + 1] * 0.587 + pixels[i + 2] * 0.114;
+        grayData.push(gray);
+    }
+
+    let laplacianSum = 0, laplacianSqSum = 0;
+    const width = canvas.width;
+    for (let y = 1; y < canvas.height - 1; y++) {
+        for (let x = 1; x < canvas.width - 1; x++) {
+            const idx = y * width + x;
+            const laplacian =
+                -4 * grayData[idx] +
+                grayData[idx - 1] + grayData[idx + 1] +
+                grayData[idx - width] + grayData[idx + width];
+
+            laplacianSum += laplacian;
+            laplacianSqSum += laplacian * laplacian;
+        }
+    }
+
+    const variance = laplacianSqSum / (canvas.width * canvas.height);
+    const threshold = 100; // Adjust based on required blur sensitivity
+    return variance < threshold;
+}
+
 
 // Event listener for removing the images
 document.getElementById('remove-image').addEventListener('click', function () {
@@ -300,6 +348,8 @@ $(document).ready(function () {
             let reader = new FileReader();
             reader.onload = function (e) {
                 rawImg = e.target.result;
+                $('#uploaded-image').attr('src', rawImg); // Set the image preview
+                $('#slider-image').attr('src', rawImg); // Set the image preview
                 $('#cropImagePop').modal('show');
             }
             reader.readAsDataURL(input.files[0]);
@@ -310,16 +360,17 @@ $(document).ready(function () {
 
     $uploadCrop = $('#upload-demo').croppie({
         viewport: {
-            width: 400,
-            height: 100,
+            width: 300, // Increased width
+            height: 250, // Increased height
         },
         enforceBoundary: false,
         enableExif: true
     });
 
     $('#cropImagePop').on('shown.bs.modal', function () {
+        let src_img = $("#uploaded-image").attr("src");
         $uploadCrop.croppie('bind', {
-            url: rawImg
+            url: src_img
         }).then(function () {
             console.log('jQuery bind complete');
         });
@@ -333,11 +384,19 @@ $(document).ready(function () {
         $uploadCrop.croppie('result', {
             type: 'base64',
             format: 'jpeg',
-            size: { width: 1680, height: 435 }
+            size: { width: 500, height: 435 }
         }).then(function (resp) {
-            $('#item-img-output').attr('src', resp);
+            $('#uploaded-image').attr('src', resp);
+            $('#slider-image').attr('src', resp);
             $('#cropImagePop').modal('hide');
         });
     });
+
+    $('#openCropModal').on('click', function () {
+        $('#cropImagePop').modal('show');
+    });
 });
+
+
+
 // crop js 
