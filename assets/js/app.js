@@ -30,6 +30,7 @@ var swiper = new Swiper(".swiper-horizontal", {
     }
 });
 
+
 // var swiper = new Swiper(".Images-frame-slider", {
 //     slidesPerView: 1,
 //     spaceBetween: 30,
@@ -208,3 +209,14 @@ $(document).ready(function () {
 
 
 
+
+
+
+var swiper = new Swiper(".frame-layout-slider", {
+    slidesPerView: 1,
+    spaceBetween: 40,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

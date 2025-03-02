@@ -1,102 +1,5 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MixPhotoTiles</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- Magnific Popup core CSS file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
-
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-
-
-</head>
-
-<body>
-
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="container-fluid">
-                            <a class="navbar-brand main-logo" href="javascript:;">
-                                <!-- <img src="assets/images/frameley-logo.svg" alt=""> -->
-                                MixPhotoTiles
-                            </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav m-auto mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="javascript:;">Your Collections</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="design.html">Design</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="javascript:;">Installation & Care</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="javascript:;">FAQs</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="javascript:;">Contact Us</a>
-                                    </li>
-                                </ul>
-                                <span class="break-line"></span>
-                                <div class="right-navbar">
-                                    <ul>
-                                        <!-- <li>
-                                            <a href="javascript:;" class="nav-link">
-                                                <span>
-                                                    <img src="assets/images/chat-right-text.svg" alt="">
-                                                </span>
-                                                <span>
-                                                    Chat
-                                                </span>
-                                            </a>
-                                        </li> -->
-                                        <li>
-                                            <a href="javascript:;" class="nav-link">
-                                                <span>
-                                                    <img src="assets/images/bag.svg" alt="">
-                                                </span>
-                                                <span>
-                                                    Cart
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;" class="btn custom-btn">Login / Sign up</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+<?php include 'include/header.php' ?>
+<?php include 'include/menu.php' ?>
 
     <section class="custom-hero-slider-section">
         <div class="container">
@@ -210,261 +113,27 @@
             </div>
     </section>
 
-<section class="main-banner-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="text-center">
-                    <h1 class="main-title">
-                        <span class="heading-2">Turn your
-                            photos into a masterpiece</span>
-                        <span class="heading-1">let your walls tell your story</span>
-                    </h1>
-                    <button type="button" class="btn custom-btn filled" onclick="window.location.href='design.html';">
-                        <svg width="26.122" height="26.849" class="w-em h-em me-2 ttl-26 mb-0" viewBox="0 0 26.122 26.849" xmlns="http://www.w3.org/2000/svg">
-                            <g transform="translate(-858.42 -842.908)">
-                                <path fill="currentColor" transform="translate(866.746 842.818)" d="M16.622.112c-.067,0-.089.045-.134.067L8.121,6.114a1.558,1.558,0,0,0-.29.357l-.29.558a5.119,5.119,0,0,1,3.347,3.347l.558-.29A1.457,1.457,0,0,0,11.8,9.8l5.935-8.367c.067-.112.089-.2,0-.29L16.756.157A.193.193,0,0,0,16.622.09ZM5.957,8.97a2.947,2.947,0,0,0-2.923,2.99,5.983,5.983,0,0,1-2.99,5.154,6.135,6.135,0,0,0,2.99.759,5.918,5.918,0,0,0,5.935-5.935,3,3,0,0,0-2.99-2.99Z">
-                                </path>
-                                <path fill="currentColor" transform="translate(859.67 845.317)" d="M23.511,24.441H-1.25V-1.25H14.126V1.2H1.2v20.8H21.064V8.171h2.447Z"></path>
-                            </g>
-                        </svg>
-                        Design your frame
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="clusters-section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="text-center">
-                    <h2 class="heading-2">Collection for your memorable walls</h2>
-                    <p class="para">
-                        Looking for ideas or effortless elegance?
-                        <span class="d-block">
-                            Explore our handpicked photo frame collections.
-                        </span>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="swiper swiper-horizontal">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="ClusterCard">
-                                <div class="ImgFrame">
-                                    <img alt="" class="img-fluid" src="assets/images/1702965251740.jpeg">
-                                </div>
-                                <div class="custom-card-body">
-                                    <h3 class="card-title">Shizuko</h3>
-                                    <div class="card-prize">
-                                        <h4 class="product-prize">
-                                            <span class="realPize">
-                                                ₹ 3414
-                                            </span>
-                                            <span class="cutPrize">
-                                                <del>
-                                                    ₹ 4268
-                                                </del>
-                                            </span>
-                                        </h4>
-                                        <span class="discountPercent">
-                                            20 % OFF
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="ClusterCard">
-                                <div class="ImgFrame">
-                                    <img alt="" class="img-fluid" src="assets/images/1702965877930.jpeg">
-                                </div>
-                                <div class="custom-card-body">
-                                    <h3 class="card-title">Shizuko</h3>
-                                    <div class="card-prize">
-                                        <h4 class="product-prize">
-                                            <span class="realPize">
-                                                ₹ 3414
-                                            </span>
-                                            <span class="cutPrize">
-                                                <del>
-                                                    ₹ 4268
-                                                </del>
-                                            </span>
-                                        </h4>
-                                        <span class="discountPercent">
-                                            20 % OFF
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="ClusterCard">
-                                <div class="ImgFrame">
-                                    <img alt="" class="img-fluid" src="assets/images/170313954987.jpeg">
-                                </div>
-                                <div class="custom-card-body">
-                                    <h3 class="card-title">Shizuko</h3>
-                                    <div class="card-prize">
-                                        <h4 class="product-prize">
-                                            <span class="realPize">
-                                                ₹ 3414
-                                            </span>
-                                            <span class="cutPrize">
-                                                <del>
-                                                    ₹ 4268
-                                                </del>
-                                            </span>
-                                        </h4>
-                                        <span class="discountPercent">
-                                            20 % OFF
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="ClusterCard">
-                                <div class="ImgFrame">
-                                    <img alt="" class="img-fluid" src="assets/images/1703139615323.jpeg">
-                                </div>
-                                <div class="custom-card-body">
-                                    <h3 class="card-title">Shizuko</h3>
-                                    <div class="card-prize">
-                                        <h4 class="product-prize">
-                                            <span class="realPize">
-                                                ₹ 3414
-                                            </span>
-                                            <span class="cutPrize">
-                                                <del>
-                                                    ₹ 4268
-                                                </del>
-                                            </span>
-                                        </h4>
-                                        <span class="discountPercent">
-                                            20 % OFF
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="ClusterCard">
-                                <div class="ImgFrame">
-                                    <img alt="" class="img-fluid" src="assets/images/1701080089395.jpeg">
-                                </div>
-                                <div class="custom-card-body">
-                                    <h3 class="card-title">Shizuko</h3>
-                                    <div class="card-prize">
-                                        <h4 class="product-prize">
-                                            <span class="realPize">
-                                                ₹ 3414
-                                            </span>
-                                            <span class="cutPrize">
-                                                <del>
-                                                    ₹ 4268
-                                                </del>
-                                            </span>
-                                        </h4>
-                                        <span class="discountPercent">
-                                            20 % OFF
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="ClusterCard">
-                                <div class="ImgFrame">
-                                    <img alt="" class="img-fluid" src="assets/images/1701079969549.jpeg">
-                                </div>
-                                <div class="custom-card-body">
-                                    <h3 class="card-title">Shizuko</h3>
-                                    <div class="card-prize">
-                                        <h4 class="product-prize">
-                                            <span class="realPize">
-                                                ₹ 3414
-                                            </span>
-                                            <span class="cutPrize">
-                                                <del>
-                                                    ₹ 4268
-                                                </del>
-                                            </span>
-                                        </h4>
-                                        <span class="discountPercent">
-                                            20 % OFF
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-
-                </div>
-
-                <div class="ctaBtnParent text-center">
-                    <button type="button" class="btn custom-btn filled">
-                        View All Collections
-                    </button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="about-section py">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="parentRightAbout">
-                    <div class="RightSliderChild">
-                        <h2 class="heading-3">MixPhotoTiles have Got You Covered</h2>
-                    </div>
-                    <div class="RightSliderChild">
-                        <div class="swiper AboutSlider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="AboutSliderParent">
-                                        <h5><b>Fast Door Delivery</b></h5>
-                                        <p>No minimum order
-                                            required</p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="AboutSliderParent">
-                                        <h5><b>Multiple Sizes & Colours</b></h5>
-                                        <p>Attractive colours and custom sizes</p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="AboutSliderParent">
-                                        <h5><b>Sleek & Sturdy</b></h5>
-                                        <p>Professionally made for long durability</p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="AboutSliderParent">
-                                        <h5><b>Customer Happiness</b></h5>
-                                        <p>Your excitement and cherishment is our primary goal</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" class="btn custom-btn filled mt-5 open-popup">
-                            <svg width="20" height="20" viewBox="0 0 20 20" class="w-em h-em me-1 ttl-20 mb-0" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="currentColor" transform="translate(-2 -2)" d="M10,16.5,16,12,10,7.5ZM12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.011,8.011,0,0,1,12,20Z"></path>
+    <section class="main-banner-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h1 class="main-title">
+                            <span class="heading-2">Turn your
+                                photos into a masterpiece</span>
+                            <span class="heading-1">let your walls tell your story</span>
+                        </h1>
+                        <button type="button" class="btn custom-btn filled"
+                            onclick="window.location.href='design.html';">
+                            <svg width="26.122" height="26.849" class="w-em h-em me-2 ttl-26 mb-0"
+                                viewBox="0 0 26.122 26.849" xmlns="http://www.w3.org/2000/svg">
+                                <g transform="translate(-858.42 -842.908)">
+                                    <path fill="currentColor" transform="translate(866.746 842.818)"
+                                        d="M16.622.112c-.067,0-.089.045-.134.067L8.121,6.114a1.558,1.558,0,0,0-.29.357l-.29.558a5.119,5.119,0,0,1,3.347,3.347l.558-.29A1.457,1.457,0,0,0,11.8,9.8l5.935-8.367c.067-.112.089-.2,0-.29L16.756.157A.193.193,0,0,0,16.622.09ZM5.957,8.97a2.947,2.947,0,0,0-2.923,2.99,5.983,5.983,0,0,1-2.99,5.154,6.135,6.135,0,0,0,2.99.759,5.918,5.918,0,0,0,5.935-5.935,3,3,0,0,0-2.99-2.99Z">
+                                    </path>
+                                    <path fill="currentColor" transform="translate(859.67 845.317)"
+                                        d="M23.511,24.441H-1.25V-1.25H14.126V1.2H1.2v20.8H21.064V8.171h2.447Z"></path>
+                                </g>
                             </svg>
                             Design your frame
                         </button>
@@ -472,6 +141,246 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="clusters-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h2 class="heading-2">Collection for your memorable walls</h2>
+                        <p class="para">
+                            Looking for ideas or effortless elegance?
+                            <span class="d-block">
+                                Explore our handpicked photo frame collections.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="swiper swiper-horizontal">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="ClusterCard">
+                                    <div class="ImgFrame">
+                                        <img alt="" class="img-fluid" src="assets/images/1702965251740.jpeg">
+                                    </div>
+                                    <div class="custom-card-body">
+                                        <h3 class="card-title">Shizuko</h3>
+                                        <div class="card-prize">
+                                            <h4 class="product-prize">
+                                                <span class="realPize">
+                                                    ₹ 3414
+                                                </span>
+                                                <span class="cutPrize">
+                                                    <del>
+                                                        ₹ 4268
+                                                    </del>
+                                                </span>
+                                            </h4>
+                                            <span class="discountPercent">
+                                                20 % OFF
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ClusterCard">
+                                    <div class="ImgFrame">
+                                        <img alt="" class="img-fluid" src="assets/images/1702965877930.jpeg">
+                                    </div>
+                                    <div class="custom-card-body">
+                                        <h3 class="card-title">Shizuko</h3>
+                                        <div class="card-prize">
+                                            <h4 class="product-prize">
+                                                <span class="realPize">
+                                                    ₹ 3414
+                                                </span>
+                                                <span class="cutPrize">
+                                                    <del>
+                                                        ₹ 4268
+                                                    </del>
+                                                </span>
+                                            </h4>
+                                            <span class="discountPercent">
+                                                20 % OFF
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ClusterCard">
+                                    <div class="ImgFrame">
+                                        <img alt="" class="img-fluid" src="assets/images/170313954987.jpeg">
+                                    </div>
+                                    <div class="custom-card-body">
+                                        <h3 class="card-title">Shizuko</h3>
+                                        <div class="card-prize">
+                                            <h4 class="product-prize">
+                                                <span class="realPize">
+                                                    ₹ 3414
+                                                </span>
+                                                <span class="cutPrize">
+                                                    <del>
+                                                        ₹ 4268
+                                                    </del>
+                                                </span>
+                                            </h4>
+                                            <span class="discountPercent">
+                                                20 % OFF
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ClusterCard">
+                                    <div class="ImgFrame">
+                                        <img alt="" class="img-fluid" src="assets/images/1703139615323.jpeg">
+                                    </div>
+                                    <div class="custom-card-body">
+                                        <h3 class="card-title">Shizuko</h3>
+                                        <div class="card-prize">
+                                            <h4 class="product-prize">
+                                                <span class="realPize">
+                                                    ₹ 3414
+                                                </span>
+                                                <span class="cutPrize">
+                                                    <del>
+                                                        ₹ 4268
+                                                    </del>
+                                                </span>
+                                            </h4>
+                                            <span class="discountPercent">
+                                                20 % OFF
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ClusterCard">
+                                    <div class="ImgFrame">
+                                        <img alt="" class="img-fluid" src="assets/images/1701080089395.jpeg">
+                                    </div>
+                                    <div class="custom-card-body">
+                                        <h3 class="card-title">Shizuko</h3>
+                                        <div class="card-prize">
+                                            <h4 class="product-prize">
+                                                <span class="realPize">
+                                                    ₹ 3414
+                                                </span>
+                                                <span class="cutPrize">
+                                                    <del>
+                                                        ₹ 4268
+                                                    </del>
+                                                </span>
+                                            </h4>
+                                            <span class="discountPercent">
+                                                20 % OFF
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ClusterCard">
+                                    <div class="ImgFrame">
+                                        <img alt="" class="img-fluid" src="assets/images/1701079969549.jpeg">
+                                    </div>
+                                    <div class="custom-card-body">
+                                        <h3 class="card-title">Shizuko</h3>
+                                        <div class="card-prize">
+                                            <h4 class="product-prize">
+                                                <span class="realPize">
+                                                    ₹ 3414
+                                                </span>
+                                                <span class="cutPrize">
+                                                    <del>
+                                                        ₹ 4268
+                                                    </del>
+                                                </span>
+                                            </h4>
+                                            <span class="discountPercent">
+                                                20 % OFF
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                    </div>
+
+                    <div class="ctaBtnParent text-center">
+                        <button type="button" class="btn custom-btn filled">
+                            View All Collections
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section py">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="parentRightAbout">
+                        <div class="RightSliderChild">
+                            <h2 class="heading-3">MixPhotoTiles have Got You Covered</h2>
+                        </div>
+                        <div class="RightSliderChild">
+                            <div class="swiper AboutSlider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="AboutSliderParent">
+                                            <h5><b>Fast Door Delivery</b></h5>
+                                            <p>No minimum order
+                                                required</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="AboutSliderParent">
+                                            <h5><b>Multiple Sizes & Colours</b></h5>
+                                            <p>Attractive colours and custom sizes</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="AboutSliderParent">
+                                            <h5><b>Sleek & Sturdy</b></h5>
+                                            <p>Professionally made for long durability</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="AboutSliderParent">
+                                            <h5><b>Customer Happiness</b></h5>
+                                            <p>Your excitement and cherishment is our primary goal</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn custom-btn filled mt-5 open-popup">
+                                <svg width="20" height="20" viewBox="0 0 20 20" class="w-em h-em me-1 ttl-20 mb-0"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" transform="translate(-2 -2)"
+                                        d="M10,16.5,16,12,10,7.5ZM12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.011,8.011,0,0,1,12,20Z">
+                                    </path>
+                                </svg>
+                                Design your frame
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <section class="clusters-section">
@@ -1597,153 +1506,31 @@
     </div>
 </section>  -->
 
-<section class="about-section py">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="parentRightAbout">
-                    <div class="RightSliderChild">
-                        <h2 class="heading-3">Why choose us?</h2>
-                        <p class="para" style=" font-size: 21px; font-weight: 500; ">
-                        Because every order you place is more than just a purchase — it’s a lifeline. 
-                        A part of our profits goes toward helping those in need — the homeless and 
-                        the hungry with children. We willingly cut a significant share of our earnings 
-                        because we believe no one should go without a meal. With every purchase, you’re 
-                        not just bringing beauty into your home — you're putting food on someone’s plate, 
-                        offering hope, and restoring dignity. This is not just our mission — 
-                        it's something we do hand in hand with you. And with every meal served, 
-                        their heartfelt prayers and gratitude extend beyond us — they reach you too. 
-                        Together, we’re not just creating art for walls; we’re creating a ripple of kindness and compassion
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <figure>
-                    <img src="assets/images/why-choose-use-1.jpg" class="img-fluid" alt="">
-                </figure>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section class="faqSection py">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="mx-auto text-center HomeTestimonials_htContent__sML46">
-                    <h2 class="heading-3">Frequently Asked Questions</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                What does Frameley have to offer?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Frameley has an incredible platform where you can customize photo frames to your liking and order
-                                them with your images. We print your images, frame them and send them off to your doorstep!</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                How do I place my order?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">You can place your order by uploading your image and customizing your frames on the design page here or if you would like to browse our catalog of pre-made frame clusters, click here to browse and add your images.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                Do you provide gift wrapping services?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Yes, you can choose the gift wrap option during checkout, a small fee will apply.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                Do you have any offers or discounts running?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">You can browse our offers/discounts during checkout by hitting the ‘Offers’ button to see what offers are available and then apply them to your order</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingFive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                                Can I collect an order directly from you?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Granted you live in the Bengaluru urban area, we are always open to our customers if you feel like you would want to collect your frames rather than wait for it to be picked up and dropped off by delivery services. Please reach out to our customer care executives who will assist you in this</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-0 HomeEnquire_homeEnquireWrp scroll-fade">
-    <div class="container">
-        <div class="text-center text-lg-start HomeEnquire_homeEnquireContent">
-            <h3 class="heading-4">Looking for Custom <span class="d-block">Sizing or Bulk Ordering?</span></h3>
-
-            <button type="button" class="btn custom-btn filled">
-                Contact Us
-            </button>
-
-        </div>
-    </div>
-</section>
-
-
-<footer class="text-white Footer_footer">
-    <div class="Footer_footerLinksWrp">
+    <section class="about-section py">
         <div class="container">
-            <div class="row align-items-end">
+            <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="parentRightAbout">
                         <div class="RightSliderChild">
                             <h2 class="heading-3">Why choose us?</h2>
-                            <p class="para">
+                            <p class="para" style=" font-size: 21px; font-weight: 500; ">
                                 Because every order you place is more than just a purchase — it’s a lifeline.
                                 A part of our profits goes toward helping those in need — the homeless and
-                                the hungry with children.
-                            </p>
-                            <p class="para">
-                                We willingly cut a significant share of our earnings
+                                the hungry with children. We willingly cut a significant share of our earnings
                                 because we believe no one should go without a meal. With every purchase, you’re
                                 not just bringing beauty into your home — you're putting food on someone’s plate,
-                                offering hope, and restoring dignity.
-                            </p>
-                            <p class="para">
-                                This is not just our mission —
+                                offering hope, and restoring dignity. This is not just our mission —
                                 it's something we do hand in hand with you. And with every meal served,
                                 their heartfelt prayers and gratitude extend beyond us — they reach you too.
                                 Together, we’re not just creating art for walls; we’re creating a ripple of kindness and
-                                compassion.
+                                compassion
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <figure>
-                        <img src="assets/images/whychoiceus.png" class="img-fluid" alt="">
+                        <img src="assets/images/why-choose-use-1.jpg" class="img-fluid" alt="">
                     </figure>
                 </div>
             </div>
@@ -1769,12 +1556,12 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseOne" aria-expanded="false"
                                     aria-controls="flush-collapseOne">
-                                    What does MixPhotoTiles have to offer?
+                                    What does Frameley have to offer?
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">MixPhotoTiles has an incredible platform where you can customize
+                                <div class="accordion-body">Frameley has an incredible platform where you can customize
                                     photo frames to your liking and order
                                     them with your images. We print your images, frame them and send them off to your
                                     doorstep!</div>
@@ -1859,119 +1646,124 @@
         </div>
     </section>
 
-    <footer class="text-white Footer_footer">
-        <div class="Footer_footerLinksWrp">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md">
-                        <img alt="Fremeley" width="100" height="55" src="assets/images/frameley-logo-white.svg">
-                        <div class="Footer_socialNav nav">
-                            <div class="nav-item">
-                                <a title="javascript:;" rel="noopener noreferrer" target="_blank" class="nav-link"
-                                    href="javascript:;">
-                                    <svg width="11.01" height="22.019" class="w-em h-em d-block"
-                                        viewBox="0 0 11.01 22.019" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="currentColor"
-                                            d="M10.408,3.894A7.126,7.126,0,0,0,8.483,3.6c-.782,0-2.467.5-2.467,1.464V7.379h4v3.894h-4V22.019H1.985V11.273H0V7.379H1.985V5.417C1.985,2.46,3.369,0,6.708,0a16.4,16.4,0,0,1,4.3.439Z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="nav-item">
-                                <a title="javascript:;" rel="noopener noreferrer" target="_blank" class="nav-link"
-                                    href="javascript:;">
-                                    <svg width="22.019" height="22.019" class="w-em h-em d-block"
-                                        viewBox="0 0 22.019 22.019" xmlns="http://www.w3.org/2000/svg">
-                                        <g transform="translate(3827 6277.01)">
-                                            <path fill="currentColor" transform="translate(-3821.484 -6271.497)"
-                                                d="M5.7,11.391A5.7,5.7,0,1,1,11.389,5.7,5.7,5.7,0,0,1,5.7,11.391Zm0-9.175A3.481,3.481,0,1,0,9.173,5.7,3.485,3.485,0,0,0,5.7,2.215Z">
-                                            </path>
-                                            <path fill="currentColor" transform="translate(-3827 -6277.01)"
-                                                d="M15.459,22.019h-8.9A6.567,6.567,0,0,1,0,15.459v-8.9A6.567,6.567,0,0,1,6.559,0h8.9a6.567,6.567,0,0,1,6.559,6.559v8.9A6.567,6.567,0,0,1,15.459,22.019Zm-8.9-19.8A4.349,4.349,0,0,0,2.215,6.559v8.9A4.349,4.349,0,0,0,6.559,19.8h8.9A4.349,4.349,0,0,0,19.8,15.459v-8.9a4.349,4.349,0,0,0-4.344-4.344ZM16.715,6.722A1.365,1.365,0,1,1,18.08,5.357,1.366,1.366,0,0,1,16.715,6.722Z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="nav-item">
-                                <a title="javascript:;" rel="noopener noreferrer" target="_blank" class="nav-link"
-                                    href="javascript:;">
-                                    <svg width="22.019" height="22.019" class="w-em h-em d-block"
-                                        viewBox="0 0 22.019 22.019" xmlns="http://www.w3.org/2000/svg">
-                                        <g transform="scale(1.2)">
-                                            <path id="X_logo_2023_original"
-                                                d="M9.464,6.739,15.383,0h-1.4L8.839,5.85,4.735,0H0L6.208,8.847,0,15.912H1.4L6.829,9.733l4.335,6.179H15.9M1.908,1.036H4.063L13.98,14.928H11.825"
-                                                transform="matrix(1, 0.017, -0.017, 1, 0.278, 0)" fill="currentColor">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </a>
+
+            <section class="faqSection py">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="mx-auto text-center HomeTestimonials_htContent__sML46">
+                                <h2 class="heading-3">Frequently Asked Questions</h2>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md">
-                        <p class="mb-4">Quick Links</p>
-                        <div class="flex-column Footer_footerLinks nav nav-underline">
-                            <div><span class="active link">Home </span></div>
-                            <div><span class=" link">Design </span></div>
-                            <div><span class=" link">Clusters </span></div>
-                            <div><span class=" link">Installation &amp; Care </span></div>
-                            <div><span class=" link">Resources </span></div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            What does MixPhotoTiles have to offer?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">MixPhotoTiles has an incredible platform where you
+                                            can customize
+                                            photo frames to your liking and order
+                                            them with your images. We print your images, frame them and send them off to
+                                            your
+                                            doorstep!</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            How do I place my order?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">You can place your order by uploading your image and
+                                            customizing your frames on the design page here or if you would like to
+                                            browse our
+                                            catalog of pre-made frame clusters, click here to browse and add your
+                                            images.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Do you provide gift wrapping services?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Yes, you can choose the gift wrap option during
+                                            checkout, a
+                                            small fee will apply.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                            aria-expanded="false" aria-controls="flush-collapseFour">
+                                            Do you have any offers or discounts running?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">You can browse our offers/discounts during checkout
+                                            by
+                                            hitting the ‘Offers’ button to see what offers are available and then apply
+                                            them to
+                                            your order</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                            aria-expanded="false" aria-controls="flush-collapseFive">
+                                            Can I collect an order directly from you?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Granted you live in the Bengaluru urban area, we are
+                                            always
+                                            open to our customers if you feel like you would want to collect your frames
+                                            rather
+                                            than wait for it to be picked up and dropped off by delivery services.
+                                            Please reach
+                                            out to our customer care executives who will assist you in this</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md">
-                        <p class="mb-4">Help</p>
-                        <div class="flex-column Footer_footerLinks nav nav-underline">
-                            <div><span class=" link">FAQs </span></div>
-                            <div><span class=" link">Contact Us </span></div>
-                            <div><span class=" link">Chat With Us </span></div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <p class="mb-4">Contact</p>
-                        <address class="mb-4">Pearl Venture, First Floor, 190/218,
-                            Outer Ring Road, Agara, 1st Sector,
-                            HSR Layout, Bangalore - 560102, KA</address>
-                        <p class="mb-2 Footer_footerContact">Call:<a class="text-decoration-none ps-1"
-                                href="javascript:;">+917975339182</a></p>
-                        <p class="mb-2 Footer_footerContact">Email:<a class="text-decoration-none ps-1"
-                                href="javascript:;">help@mixphototiles.com</a></p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="text-white text-opacity-35  fs-15 Footer_footerBottomWrp">
-            <div class="container">
-                <div class="d-flex flex-wrap justify-content-center align-items-center flex-column flex-xl-row gap-3">
-                    <div class="Footer_footerBottomNav nav">
-                        <div class="nav-item"><a class="nav-link " href="javascript:;">Privacy Policy</a></div>
-                        <div class="nav-item"><a class="nav-link " href="javascript:;">Refund Policy</a></div>
-                        <div class="nav-item"><a class="nav-link " href="javascript:;">Terms &amp; Conditions</a></div>
-                        <div class="nav-item"><a class="nav-link " href="javascript:;">Shipping Policy</a></div>
-                    </div>
-                    <div
-                        class="d-flex mx-auto align-items-center flex-wrap text-center justify-content-center flex-column flex-sm-row gap-2">
-                        <p class="mb-0">© <!-- -->2025<!-- --> Framely, Inc. All rights reserved</p><span
-                            class="d-none d-sm-block">|</span>
-                        <p class="mb-0">Designed by<a target="_blank" class="text-decoration-none ps-1"
-                                href="javascript:;">Webandcrafts</a></p>
+            </section>
+
+            <section class="py-0 HomeEnquire_homeEnquireWrp scroll-fade">
+                <div class="container">
+                    <div class="text-center text-lg-start HomeEnquire_homeEnquireContent">
+                        <h3 class="heading-4">Looking for Custom <span class="d-block">Sizing or Bulk Ordering?</span>
+                        </h3>
+
+                        <button type="button" class="btn custom-btn filled">
+                            Contact Us
+                        </button>
+
                     </div>
                 </div>
-            </div>
-        </div>
-    </footer>
+            </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Magnific Popup core JS file -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/design.js"></script>
-</body>
-
-</html>
+            <?php include 'include/footer.php' ?>
