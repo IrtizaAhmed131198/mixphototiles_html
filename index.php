@@ -14,93 +14,76 @@
                                         <div class="swiper-slide">
                                             <div class="innerFrame">
                                                 <img alt="Banner image" width="450px" height="500px"
-                                                    src="assets/images/17044619177.jpeg">
+                                                    src="assets/images/banner/samp-8.webp">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="innerFrame">
                                                 <img alt="Banner image" width="450px" height="500px"
-                                                    src="assets/images/1704465964647.jpeg">
+                                                    src="assets/images/banner/samp-9.jpg">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="innerFrame">
                                                 <img alt="Banner image" width="450px" height="500px"
-                                                    src="assets/images/170446360845.jpeg">
+                                                    src="assets/images/banner/samp-10.webp">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="innerFrame">
                                                 <img alt="Banner image" width="450px" height="500px"
-                                                    src="assets/images/1704464305392.jpeg">
+                                                    src="assets/images/banner/samp-11.jpg">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="innerFrame">
                                                 <img alt="Banner image" width="450px" height="500px"
-                                                    src="assets/images/1704464924627.jpeg">
+                                                    src="assets/images/banner/samp-12.jpg">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="innerFrame">
                                                 <img alt="Banner image" width="450px" height="500px"
-                                                    src="assets/images/1704465024427.jpeg">
+                                                    src="assets/images/banner/samp-14.jpg">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="innerFrame">
                                                 <img alt="Banner image" width="450px" height="500px"
-                                                    src="assets/images/1704465091173.jpeg">
+                                                    src="assets/images/banner/samp-15.jpg">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="innerFrame">
                                                 <img alt="Banner image" width="450px" height="500px"
-                                                    src="assets/images/1704465682987.jpeg">
+                                                    src="assets/images/banner/samp-16.jpg">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="innerFrame">
                                                 <img alt="Banner image" width="450px" height="500px"
-                                                    src="assets/images/1704555759255.jpeg">
+                                                    src="assets/images/banner/samp-17.jpg">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="innerFrame">
                                                 <img alt="Banner image" width="450px" height="500px"
-                                                    src="assets/images/1704642518366.jpeg">
+                                                    src="assets/images/banner/samp-18.jpg">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="innerFrame">
                                                 <img alt="Banner image" width="450px" height="500px"
-                                                    src="assets/images/1704698364866.jpeg">
+                                                    src="assets/images/banner/samp-19.jpg">
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="innerFrame">
                                                 <img alt="Banner image" width="450px" height="500px"
-                                                    src="assets/images/1704698382466.jpeg">
+                                                    src="assets/images/banner/samp-20.jpg">
                                             </div>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="innerFrame">
-                                                <img alt="Banner image" width="450px" height="500px"
-                                                    src="assets/images/1704698450857.jpeg">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="innerFrame">
-                                                <img alt="Banner image" width="450px" height="500px"
-                                                    src="assets/images/1704698477783.jpeg">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="innerFrame">
-                                                <img alt="Banner image" width="450px" height="500px"
-                                                    src="assets/images/1704698493736.jpeg">
-                                            </div>
-                                        </div>
+                                        
                                     </div>
 
 
@@ -139,6 +122,11 @@
                         </button>
                     </div>
                 </div>
+            </div>
+            <div class="col-lg-6">
+                <figure>
+                    <img src="assets/images/home-company-img.png" class="img-fluid" alt="">
+                </figure>
             </div>
         </div>
     </section>
@@ -635,66 +623,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="about-section py">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="parentRightAbout">
-                        <div class="RightSliderChild">
-                            <h2 class="heading-3">MixPhotoTiles have Got You Covered</h2>
-                        </div>
-                        <div class="RightSliderChild">
-                            <div class="swiper AboutSlider">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="AboutSliderParent">
-                                            <h5><b>Fast Door Delivery</b></h5>
-                                            <p>No minimum order
-                                                required</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="AboutSliderParent">
-                                            <h5><b>Multiple Sizes & Colours</b></h5>
-                                            <p>Attractive colours and custom sizes</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="AboutSliderParent">
-                                            <h5><b>Sleek & Sturdy</b></h5>
-                                            <p>Professionally made for long durability</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="AboutSliderParent">
-                                            <h5><b>Customer Happiness</b></h5>
-                                            <p>Your excitement and cherishment is our primary goal</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="button" class="btn custom-btn filled mt-5 open-popup">
-                                <svg width="20" height="20" viewBox="0 0 20 20" class="w-em h-em me-1 ttl-20 mb-0"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="currentColor" transform="translate(-2 -2)"
-                                        d="M10,16.5,16,12,10,7.5ZM12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.011,8.011,0,0,1,12,20Z">
-                                    </path>
-                                </svg>
-                                Watch Video
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <figure>
-                        <img src="assets/images/home-company-img.png" class="img-fluid" alt="">
-                    </figure>
-                </div>
-            </div>
-
         </div>
     </section>
 
@@ -1338,9 +1266,9 @@
                                         </g>
                                     </svg>
                                     <div class="ttl-18 fw-medium TestimonialCard_cardTitle card-title h5">
-                                        Frameley is an excellent platform to get your pics customized at your ease
+                                        Mixphototiles is an excellent platform to get your pics customized at your ease
                                         and convenience and most importantly - choice!
-                                        I have ordered thrice from Frameley, and never has there been a glitch.
+                                        I have ordered thrice from Mixphototiles, and never has there been a glitch.
                                         They respond to any queries so sweetly, as if they are<span class="text-primary TestimonialCard_readmore_btn"> ...Read
                                             More</span>
                                     </div>
@@ -1542,9 +1470,35 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="mx-auto text-center HomeTestimonials_htContent__sML46">
-                        <h2 class="heading-3">Frequently Asked Questions</h2>
+                <div class="col-md">
+                    <img alt="Fremeley" width="100" height="55" src="assets/images/Mixphototiles-logo-white.svg">
+                    <div class="Footer_socialNav nav">
+                        <div class="nav-item">
+                            <a title="javascript:;" rel="noopener noreferrer" target="_blank" class="nav-link" href="javascript:;">
+                                <svg width="11.01" height="22.019" class="w-em h-em d-block" viewBox="0 0 11.01 22.019" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" d="M10.408,3.894A7.126,7.126,0,0,0,8.483,3.6c-.782,0-2.467.5-2.467,1.464V7.379h4v3.894h-4V22.019H1.985V11.273H0V7.379H1.985V5.417C1.985,2.46,3.369,0,6.708,0a16.4,16.4,0,0,1,4.3.439Z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a title="javascript:;" rel="noopener noreferrer" target="_blank" class="nav-link" href="javascript:;">
+                                <svg width="22.019" height="22.019" class="w-em h-em d-block" viewBox="0 0 22.019 22.019" xmlns="http://www.w3.org/2000/svg">
+                                    <g transform="translate(3827 6277.01)">
+                                        <path fill="currentColor" transform="translate(-3821.484 -6271.497)" d="M5.7,11.391A5.7,5.7,0,1,1,11.389,5.7,5.7,5.7,0,0,1,5.7,11.391Zm0-9.175A3.481,3.481,0,1,0,9.173,5.7,3.485,3.485,0,0,0,5.7,2.215Z"></path>
+                                        <path fill="currentColor" transform="translate(-3827 -6277.01)" d="M15.459,22.019h-8.9A6.567,6.567,0,0,1,0,15.459v-8.9A6.567,6.567,0,0,1,6.559,0h8.9a6.567,6.567,0,0,1,6.559,6.559v8.9A6.567,6.567,0,0,1,15.459,22.019Zm-8.9-19.8A4.349,4.349,0,0,0,2.215,6.559v8.9A4.349,4.349,0,0,0,6.559,19.8h8.9A4.349,4.349,0,0,0,19.8,15.459v-8.9a4.349,4.349,0,0,0-4.344-4.344ZM16.715,6.722A1.365,1.365,0,1,1,18.08,5.357,1.366,1.366,0,0,1,16.715,6.722Z"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a title="javascript:;" rel="noopener noreferrer" target="_blank" class="nav-link" href="javascript:;">
+                                <svg width="22.019" height="22.019" class="w-em h-em d-block" viewBox="0 0 22.019 22.019" xmlns="http://www.w3.org/2000/svg">
+                                    <g transform="scale(1.2)">
+                                        <path id="X_logo_2023_original" d="M9.464,6.739,15.383,0h-1.4L8.839,5.85,4.735,0H0L6.208,8.847,0,15.912H1.4L6.829,9.733l4.335,6.179H15.9M1.908,1.036H4.063L13.98,14.928H11.825" transform="matrix(1, 0.017, -0.017, 1, 0.278, 0)" fill="currentColor"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1629,11 +1583,25 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md">
+                    <p class="mb-4">Help</p>
+                    <div class="flex-column Footer_footerLinks nav nav-underline">
+                        <div><span class=" link">FAQs </span></div>
+                        <div><span class=" link">Contact Us </span></div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <p class="mb-4">Contact</p>
+                    <address class="mb-4">Pearl Venture, First Floor, 190/218,
+                        Outer Ring Road, Agara, 1st Sector,
+                        HSR Layout, Bangalore - 560102, KA</address>
+                    <p class="mb-2 Footer_footerContact">Call:<a class="text-decoration-none ps-1" href="javascript:;">+917975339182</a></p>
+                    <p class="mb-2 Footer_footerContact">Email:<a class="text-decoration-none ps-1" href="javascript:;">help@Mixphototiles.com</a></p>
+                </div>
             </div>
         </div>
-    </section>
-
-    <section class="py-0 HomeEnquire_homeEnquireWrp scroll-fade">
+    </div>
+    <div class="text-white text-opacity-35  fs-15 Footer_footerBottomWrp">
         <div class="container">
             <div class="text-center text-lg-start HomeEnquire_homeEnquireContent">
                 <h3 class="heading-4">Looking for Custom <span class="d-block">Sizing or Bulk Ordering?</span></h3>
